@@ -240,7 +240,7 @@ RCT_EXPORT_METHOD(prepare
     for (int i = 0; i < sourceLen; ++i) {
         const unsigned char thisChar = source[i];
         if (thisChar == ' '){
-            [output appendString:@"%20"];
+            [output appendString:@"%20"];//change format encoding
         } else if (thisChar == '.' || thisChar == '-' || thisChar == '_' || thisChar == '~' ||
                    (thisChar >= 'a' && thisChar <= 'z') ||
                    (thisChar >= 'A' && thisChar <= 'Z') ||
